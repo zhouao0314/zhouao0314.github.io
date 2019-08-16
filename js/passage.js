@@ -27,14 +27,14 @@
   tocShowBtn && tocShowBtn.addEventListener('click', (e) => {
     e.preventDefault();
     e.stopPropagation();
-    layer.style.display = 'block';
+/*    layer.style.display = 'block';
     layerContent.style.display = 'none';
-    toc.style.right = '0';
+    toc.style.left = '0';*/
 
     window.AD_CONFIG.layer.add(() => {
-      toc.style.right = '';
-      layer.style.display = 'none';
-      layerContent.style.display = '';
+        /*       toc.style.left = '';
+             layer.style.display = 'none';
+              layerContent.style.display = '';*/
     });
   });
   

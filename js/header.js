@@ -11,6 +11,8 @@
   const inputDOM = searchDOM.querySelector('input'),
     iconDOM = searchDOM.querySelector('i');
 
+    toc.style.left = '0';
+
   let platformIndex = 0,
     platforms = [
       'Google',
@@ -56,14 +58,14 @@
   navBtn.addEventListener('click', (e) => {
     e.preventDefault();
     e.stopPropagation();
-    layer.style.display = 'block';
-    layerContent.style.display = 'none';
-    nav.style.right = '0';
+   /* layer.style.display = 'block';
+    layerContent.style.display = 'none';*/
+    nav.style.left = '0';
 
     window.AD_CONFIG.layer.add(() => {
-      nav.style.right = '';
-      layer.style.display = 'none';
-      layerContent.style.display = '';
+      nav.style.left = '';
+     /* layer.style.display = 'none';
+      layerContent.style.display = '';*/
     });
   });
 
