@@ -23,6 +23,7 @@
     toc = document.querySelector('#site-toc'),
     tocShowBtn = document.querySelector('#site-toc-show-btn'),
     tocHideBtn = document.querySelector('#site-toc-hide-btn');
+    /*toc.style.left = '0';*/
 
   tocShowBtn && tocShowBtn.addEventListener('click', (e) => {
     e.preventDefault();
